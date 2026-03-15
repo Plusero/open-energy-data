@@ -35,3 +35,9 @@ A curated collection of open energy datasets.
 | MATPOWER Case Files                               | ✓ immediately downloadable | —        | [https://matpower.org/](https://matpower.org/) — standard IEEE test cases (14, 30, 57, 118, 300-bus, etc.) for power flow and optimal power flow studies |
 | pglib-opf                                         | ✓ immediately downloadable | —        | [https://github.com/power-grid-lib/pglib-opf](https://github.com/power-grid-lib/pglib-opf) — IEEE PES benchmark cases for AC Optimal Power Flow validation |
 | Texas A&M Electric Grid Test Cases                | ✓ immediately downloadable | 🇺🇸 US     | [https://electricgrids.engr.tamu.edu/electric-grid-test-cases/](https://electricgrids.engr.tamu.edu/electric-grid-test-cases/) — synthetic US grid cases up to 70,000+ buses |
+
+## Geoinformation
+
+| Name                        | Availability               | Location | Link                                                                                                                                          |
+| --------------------------- | -------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Liander Open Data Elektra   | ✓ immediately downloadable | 🇳🇱 NL     | [https://www.arcgis.com/home/item.html?id=11b7bcf1b78b4462b91db0dff234cf78](https://www.arcgis.com/home/item.html?id=11b7bcf1b78b4462b91db0dff234cf78) — geospatial data of Alliander/Liander's Dutch electricity distribution network |
