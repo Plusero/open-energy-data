@@ -1,0 +1,46 @@
+name: Daily Check for New Open Energy Datasets
+
+on:
+  schedule:
+    # Run every day at 08:00 UTC
+    - cron: "0 8 * * *"
+  workflow_dispatch: # Allow manual triggering for testing
+
+jobs:
+  check-datasets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install openai
+
+      - name: Check for new datasets
+        id: check
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/check_new_datasets.py
+
+      - name: Create Pull Request
+        if: steps.check.outputs.new_datasets_found == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: add newly discovered open energy datasets"
+          title: "Add newly discovered open energy datasets"
+          body-path: new_datasets_summary.md
+          branch: auto/new-datasets-${{ github.run_id }}
+          labels: automated,datasets
+          delete-branch: true
+          add-paths: |
+            README.md
