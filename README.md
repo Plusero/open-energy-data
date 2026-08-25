@@ -57,6 +57,11 @@ A curated collection of open energy datasets.
 | MATPOWER Case Files                               | ✓ immediately downloadable | —        | [https://matpower.org/](https://matpower.org/) — standard IEEE test cases (14, 30, 57, 118, 300-bus, etc.) for power flow and optimal power flow studies |
 | pglib-opf                                         | ✓ immediately downloadable | —        | [https://github.com/power-grid-lib/pglib-opf](https://github.com/power-grid-lib/pglib-opf) — IEEE PES benchmark cases for AC Optimal Power Flow validation |
 | Texas A&M Electric Grid Test Cases                | ✓ immediately downloadable | 🇺🇸 US     | [https://electricgrids.engr.tamu.edu/electric-grid-test-cases/](https://electricgrids.engr.tamu.edu/electric-grid-test-cases/) — synthetic US grid cases up to 70,000+ buses |
+| 202-bus distribution system                        | ✓ immediately downloadable | —        | [GitHub](https://github.com/LuisGallego2019/ElectricalSystemsDataForReconfiguration) — 202 target nodes and 202 buses (0% difference); radial, balanced distribution system |
+| PGLib case4020_goc                                 | ✓ immediately downloadable | —        | [PGLib case4020_goc](https://github.com/power-grid-lib/pglib-opf/blob/master/pglib_opf_case4020_goc.m) — 4,207 target nodes and 4,020 buses (-4.4% difference); synthetic meshed transmission grid |
+| PGLib case5658_epigrids                            | ✓ immediately downloadable | —        | [PGLib case5658_epigrids](https://github.com/power-grid-lib/pglib-opf/blob/master/pglib_opf_case5658_epigrids.m) — 5,809 target nodes and 5,658 buses (-2.6% difference); synthetic Florida transmission grid |
+| PGLib case20758_epigrids                           | ✓ immediately downloadable | —        | [PGLib case20758_epigrids](https://github.com/power-grid-lib/pglib-opf/blob/master/pglib_opf_case20758_epigrids.m) — 21,829 target nodes and 20,758 buses (-4.9% difference); synthetic Western transmission grid |
+| ACTIVSg70k                                         | ✓ immediately downloadable | 🇺🇸 US     | [GitHub](https://github.com/caseformat/ACTIVSg70k) — 53,068 target nodes and 70,000 buses (+31.9% difference); synthetic Eastern-US transmission grid |
 
 ## Geoinformation
 
